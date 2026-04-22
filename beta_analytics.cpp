@@ -19,24 +19,34 @@ public:
         int idCheck = subscriptionID / 100; 
 
         int discount = 0;
+
+        
+           
         
         if (idCheck == 44) {
                 discount = 20;
+                 customerCount++;
             }
         else if (idCheck == 60) {
                 discount = 15;
+                 customerCount++;
             }
         else if (idCheck == 53) {
                 discount = 10;
+                 customerCount++;
             }
         else if (idCheck == 41) {
                 discount = 5;
+                 customerCount++;
             }
+            
+       
         else {
             cout << "No Discout available for this marketplace" << endl;
+            
             }
 
-        customerCount++; 
+         
 
         cout << "Congratulations, You have availed "
              << discount << "% discount." << endl;
@@ -56,6 +66,9 @@ int main() {
 
     CloudDiscount customer2(4490);
     customer2.checkDiscount();
+    
+    CloudDiscount customer3(0000);
+    customer3.checkDiscount();
 
     CloudDiscount::showCustomerCount();
 
