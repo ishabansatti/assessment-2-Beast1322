@@ -61,12 +61,12 @@ public:
 int CloudDiscount::customerCount = 0;
 
 int main() {
-    CloudDiscount customer1(5321);
+    CloudDiscount GCPMarketplace(5321);
     customer1.checkDiscount();
 
-    CloudDiscount customer2(4490);
+    CloudDiscount AWSMarketplace(4490);
     customer2.checkDiscount();
-    
+    // third object as told by sir
     CloudDiscount customer3(0000);
     customer3.checkDiscount();
 
